@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "The Epub AI Assistant",
+  "version": "1.0.0",
+  "description": "EPUB reader browser extension with local AI model configuration.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Open The Epub AI Assistant"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
