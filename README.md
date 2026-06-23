@@ -2,6 +2,16 @@
 
 一个以 Chrome/Chromium 浏览器插件为目标形态的 AI EPUB 阅读器。
 
+## 项目截图
+
+### 书架首页
+
+![书架首页](docs/screenshots/library.png)
+
+### 阅读器页面
+
+![阅读器页面](docs/screenshots/reader.png)
+
 ## 当前方向
 
 项目已经从原先的多形态方案收敛为：
@@ -35,16 +45,16 @@ npm run dev
 npm run build:ext
 ```
 
-构建产物默认输出到 `dist/`，并通过 [public/manifest.json](/Users/fred/Documents/epub_project_plus/public/manifest.json:1) 作为浏览器插件清单。
+构建产物默认输出到 `dist/`，并通过 [public/manifest.json](public/manifest.json) 作为浏览器插件清单。
 
 ## 关键文件
 
-1. [需求文档.md](/Users/fred/Documents/epub_project_plus/需求文档.md:1)
-2. [public/manifest.json](/Users/fred/Documents/epub_project_plus/public/manifest.json:1)
-3. [src/App.tsx](/Users/fred/Documents/epub_project_plus/src/App.tsx:1)
-4. [src/components/settings/SettingsModal.tsx](/Users/fred/Documents/epub_project_plus/src/components/settings/SettingsModal.tsx:1)
-5. [src/core/llm/LLMClient.ts](/Users/fred/Documents/epub_project_plus/src/core/llm/LLMClient.ts:1)
-6. [src/core/db/BookDatabase.ts](/Users/fred/Documents/epub_project_plus/src/core/db/BookDatabase.ts:1)
+1. [需求文档.md](需求文档.md)
+2. [public/manifest.json](public/manifest.json)
+3. [src/App.tsx](src/App.tsx)
+4. [src/components/settings/SettingsModal.tsx](src/components/settings/SettingsModal.tsx)
+5. [src/core/llm/LLMClient.ts](src/core/llm/LLMClient.ts)
+6. [src/core/db/BookDatabase.ts](src/core/db/BookDatabase.ts)
 
 ## 说明
 
