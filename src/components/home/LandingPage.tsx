@@ -1,3 +1,4 @@
+import followQr from '../../assets/follow-qr.png';
 import { useLocale } from '../../i18n';
 
 interface LandingPageProps {
@@ -89,6 +90,34 @@ export function LandingPage({ onStartReading, onOpenSettings }: LandingPageProps
                             <div className="rounded-2xl border border-black/5 bg-white/80 p-4 shadow-sm">
                                 <div className="text-sm text-gray-500">{t('landing.card.model.label')}</div>
                                 <div className="mt-2 text-2xl font-bold text-[#2d241f]">{t('landing.card.model.value')}</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="mt-16">
+                    <div className="overflow-hidden rounded-[2rem] border border-black/5 bg-white/80 shadow-xl shadow-black/5 backdrop-blur">
+                        <div className="grid gap-8 px-8 py-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+                            <div>
+                                <p className="mb-3 inline-flex rounded-full border border-[#8f1d14]/10 bg-[#fff7f2] px-4 py-2 text-xs font-semibold tracking-[0.18em] text-[#8f1d14]">
+                                    {t('landing.follow.badge')}
+                                </p>
+                                <h3 className="font-serif text-3xl font-bold leading-tight text-[#2d241f]">
+                                    {t('landing.follow.title')}
+                                </h3>
+                                <p className="mt-4 max-w-2xl text-base leading-7 text-gray-600">
+                                    {t('landing.follow.desc')}
+                                </p>
+                            </div>
+
+                            <div className="flex justify-center lg:justify-end">
+                                <div className="rounded-[1.75rem] bg-[#fffaf5] p-5 shadow-lg shadow-black/5 ring-1 ring-black/5">
+                                    <img
+                                        src={followQr}
+                                        alt={t('landing.follow.imageAlt')}
+                                        className="h-56 w-56 rounded-2xl bg-white object-contain"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
